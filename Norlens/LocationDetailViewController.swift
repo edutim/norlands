@@ -25,8 +25,6 @@ class LocationDetailController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        configurePageControl()
-        
         //Setup the scrollview with multiple images if they exist
         for i in 0..<location.images.count {
             frame.origin.x = self.scrollView.frame.size.width * CGFloat(i)
@@ -43,17 +41,25 @@ class LocationDetailController: UIViewController {
         self.blurbTextView.text = location.blurb
     }
     
+    /*
+    //removed but might add back in once I figure out how these stinkin' pageControls are supposed to work
+     //http://stackoverflow.com/questions/29074454/how-to-create-a-scroll-view-with-a-page-control-using-swift
     func configurePageControl() {
         // The total number of pages that are available is based on how many available colors we have.
         self.pageControl.numberOfPages = location.images.count
         self.pageControl.currentPage = 0
         self.pageControl.tintColor = UIColor.red
-        self.pageControl.pageIndicatorTintColor = UIColor.black
-        self.pageControl.currentPageIndicatorTintColor = UIColor.green
+        self.pageControl.pageIndicatorTintColor = UIColor.orange
+        self.pageControl.currentPageIndicatorTintColor = UIColor.blue
         //self.view.addSubview(pageControl)
         
     }
-
+    */
+ 
+    @IBAction func back(sender: AnyObject) {
+        self.dismiss(animated: true, completion: {})
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
