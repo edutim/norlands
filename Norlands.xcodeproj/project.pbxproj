@@ -19,6 +19,7 @@
 		4A7E2C1C1E7851E80024D190 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C1B1E7851E80024D190 /* MapViewController.swift */; };
 		4A7E2C1E1E78650C0024D190 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E2C1D1E78650C0024D190 /* Notes */; };
 		4A7E2C201E786D900024D190 /* LocationCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C1F1E786D900024D190 /* LocationCustomCell.swift */; };
+		4A7E2C221E7883430024D190 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C211E7883430024D190 /* MoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		4A7E2C1B1E7851E80024D190 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4A7E2C1D1E78650C0024D190 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 		4A7E2C1F1E786D900024D190 /* LocationCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCustomCell.swift; sourceTree = "<group>"; };
+		4A7E2C211E7883430024D190 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				4A7E2C051E73A6F20024D190 /* LocationDetailViewController.swift */,
 				4A7E2C1F1E786D900024D190 /* LocationCustomCell.swift */,
 				4A7E2C1B1E7851E80024D190 /* MapViewController.swift */,
+				4A7E2C211E7883430024D190 /* MoreViewController.swift */,
 				4A7E2C171E784D090024D190 /* Manager.swift */,
 				4A7E2C151E784C460024D190 /* Location.swift */,
 				4A7E2C071E73A6F20024D190 /* Main.storyboard */,
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7E2C221E7883430024D190 /* MoreViewController.swift in Sources */,
 				4A7E2C061E73A6F20024D190 /* LocationDetailViewController.swift in Sources */,
 				4A7E2C021E73A6F20024D190 /* AppDelegate.swift in Sources */,
 				4A7E2C1A1E7851910024D190 /* LocationTableViewController.swift in Sources */,
