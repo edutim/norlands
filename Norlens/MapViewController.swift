@@ -20,7 +20,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         //Set the initial location of the mapview
         let initialLocation = CLLocation(latitude: 44.4042, longitude: -70.2096)
-        let regionRadius: CLLocationDistance = 250000
+        let regionRadius: CLLocationDistance = 25000
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(initialLocation.coordinate,
                                                                   regionRadius * 2.0, regionRadius * 2.0)
         self.mapView.setRegion(coordinateRegion, animated: true)

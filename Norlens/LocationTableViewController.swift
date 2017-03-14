@@ -29,23 +29,38 @@ class LocationTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return Manager.shared.locations.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseID", for: indexPath)
 
+        //check for the tag 1, which is the label in the custom tableviewcell
+        if let label = cell.contentView.viewWithTag(1) as? UILabel {
+            let location = Manager.shared.locations[indexPath.row] as Location
+            label.text = location.title
+        }
+        
+        //check for the view tag 2, which in the image in the custom tableviewcell
+        if let imageView = cell.contentView.viewWithTag(2) as? UIImageView {
+            let location = Manager.shared.locations[indexPath.row] as Location
+            imageView.image = location.mainImage
+        }
+        
         // Configure the cell...
 
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.

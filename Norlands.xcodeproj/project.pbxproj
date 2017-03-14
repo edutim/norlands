@@ -17,6 +17,8 @@
 		4A7E2C181E784D090024D190 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C171E784D090024D190 /* Manager.swift */; };
 		4A7E2C1A1E7851910024D190 /* LocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C191E7851910024D190 /* LocationTableViewController.swift */; };
 		4A7E2C1C1E7851E80024D190 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C1B1E7851E80024D190 /* MapViewController.swift */; };
+		4A7E2C1E1E78650C0024D190 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E2C1D1E78650C0024D190 /* Notes */; };
+		4A7E2C201E786D900024D190 /* LocationCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C1F1E786D900024D190 /* LocationCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		4A7E2C171E784D090024D190 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		4A7E2C191E7851910024D190 /* LocationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableViewController.swift; sourceTree = "<group>"; };
 		4A7E2C1B1E7851E80024D190 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4A7E2C1D1E78650C0024D190 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
+		4A7E2C1F1E786D900024D190 /* LocationCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 				4A7E2C031E73A6F20024D190 /* HomeViewController.swift */,
 				4A7E2C191E7851910024D190 /* LocationTableViewController.swift */,
 				4A7E2C051E73A6F20024D190 /* LocationDetailViewController.swift */,
+				4A7E2C1F1E786D900024D190 /* LocationCustomCell.swift */,
 				4A7E2C1B1E7851E80024D190 /* MapViewController.swift */,
 				4A7E2C171E784D090024D190 /* Manager.swift */,
 				4A7E2C151E784C460024D190 /* Location.swift */,
@@ -75,6 +80,7 @@
 				4A7E2C0A1E73A6F20024D190 /* Assets.xcassets */,
 				4A7E2C0C1E73A6F20024D190 /* LaunchScreen.storyboard */,
 				4A7E2C0F1E73A6F20024D190 /* Info.plist */,
+				4A7E2C1D1E78650C0024D190 /* Notes */,
 			);
 			name = Norlands;
 			path = Norlens;
@@ -142,6 +148,7 @@
 			files = (
 				4A7E2C0E1E73A6F20024D190 /* LaunchScreen.storyboard in Resources */,
 				4A7E2C0B1E73A6F20024D190 /* Assets.xcassets in Resources */,
+				4A7E2C1E1E78650C0024D190 /* Notes in Resources */,
 				4A7E2C091E73A6F20024D190 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +167,7 @@
 				4A7E2C041E73A6F20024D190 /* HomeViewController.swift in Sources */,
 				4A7E2C181E784D090024D190 /* Manager.swift in Sources */,
 				4A7E2C1C1E7851E80024D190 /* MapViewController.swift in Sources */,
+				4A7E2C201E786D900024D190 /* LocationCustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
