@@ -13,6 +13,9 @@ class LocationDetailController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
     
+    var location = Location()
+    
+    //temp
     var images = [UIImage(named: "pic1"), UIImage(named: "pic2")]
     
     var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
@@ -23,13 +26,13 @@ class LocationDetailController: UIViewController {
         
         configurePageControl()
         
-        for i in 0..<images.count {
+        for i in 0..<location.images.count {
             frame.origin.x = self.scrollView.frame.size.width * CGFloat(i)
             frame.size = self.scrollView.frame.size
             self.scrollView.isPagingEnabled = true
             
             let sv = UIImageView(frame: frame)
-            sv.image = images[i]
+            sv.image = location.images[i]
             self.scrollView.addSubview(sv)
         }
         

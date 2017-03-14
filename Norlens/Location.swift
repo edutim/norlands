@@ -10,7 +10,7 @@ import UIKit
 
 class Location {
     var titie = "Test Title"
-    var images = [UIImage]()
+    var images = [UIImage(named: "pic1"), UIImage(named: "pic2")]
     var blurb = "Test blurb"
     
 }
