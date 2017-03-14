@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		4A7E2C021E73A6F20024D190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C011E73A6F20024D190 /* AppDelegate.swift */; };
-		4A7E2C041E73A6F20024D190 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C031E73A6F20024D190 /* FirstViewController.swift */; };
-		4A7E2C061E73A6F20024D190 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C051E73A6F20024D190 /* SecondViewController.swift */; };
+		4A7E2C041E73A6F20024D190 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C031E73A6F20024D190 /* HomeViewController.swift */; };
+		4A7E2C061E73A6F20024D190 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C051E73A6F20024D190 /* LocationDetailViewController.swift */; };
 		4A7E2C091E73A6F20024D190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E2C071E73A6F20024D190 /* Main.storyboard */; };
 		4A7E2C0B1E73A6F20024D190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E2C0A1E73A6F20024D190 /* Assets.xcassets */; };
 		4A7E2C0E1E73A6F20024D190 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E2C0C1E73A6F20024D190 /* LaunchScreen.storyboard */; };
+		4A7E2C161E784C460024D190 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C151E784C460024D190 /* Location.swift */; };
+		4A7E2C181E784D090024D190 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C171E784D090024D190 /* Manager.swift */; };
+		4A7E2C1A1E7851910024D190 /* LocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C191E7851910024D190 /* LocationTableViewController.swift */; };
+		4A7E2C1C1E7851E80024D190 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C1B1E7851E80024D190 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4A7E2BFE1E73A6F20024D190 /* Norlens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Norlens.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A7E2BFE1E73A6F20024D190 /* Norlands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Norlands.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7E2C011E73A6F20024D190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A7E2C031E73A6F20024D190 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		4A7E2C051E73A6F20024D190 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		4A7E2C031E73A6F20024D190 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4A7E2C051E73A6F20024D190 /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
 		4A7E2C081E73A6F20024D190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A7E2C0A1E73A6F20024D190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A7E2C0D1E73A6F20024D190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A7E2C0F1E73A6F20024D190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A7E2C151E784C460024D190 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		4A7E2C171E784D090024D190 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		4A7E2C191E7851910024D190 /* LocationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableViewController.swift; sourceTree = "<group>"; };
+		4A7E2C1B1E7851E80024D190 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +48,7 @@
 		4A7E2BF51E73A6F10024D190 = {
 			isa = PBXGroup;
 			children = (
-				4A7E2C001E73A6F20024D190 /* Norlens */,
+				4A7E2C001E73A6F20024D190 /* Norlands */,
 				4A7E2BFF1E73A6F20024D190 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +56,36 @@
 		4A7E2BFF1E73A6F20024D190 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4A7E2BFE1E73A6F20024D190 /* Norlens.app */,
+				4A7E2BFE1E73A6F20024D190 /* Norlands.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4A7E2C001E73A6F20024D190 /* Norlens */ = {
+		4A7E2C001E73A6F20024D190 /* Norlands */ = {
 			isa = PBXGroup;
 			children = (
 				4A7E2C011E73A6F20024D190 /* AppDelegate.swift */,
-				4A7E2C031E73A6F20024D190 /* FirstViewController.swift */,
-				4A7E2C051E73A6F20024D190 /* SecondViewController.swift */,
+				4A7E2C031E73A6F20024D190 /* HomeViewController.swift */,
+				4A7E2C191E7851910024D190 /* LocationTableViewController.swift */,
+				4A7E2C051E73A6F20024D190 /* LocationDetailViewController.swift */,
+				4A7E2C1B1E7851E80024D190 /* MapViewController.swift */,
+				4A7E2C171E784D090024D190 /* Manager.swift */,
+				4A7E2C151E784C460024D190 /* Location.swift */,
 				4A7E2C071E73A6F20024D190 /* Main.storyboard */,
 				4A7E2C0A1E73A6F20024D190 /* Assets.xcassets */,
 				4A7E2C0C1E73A6F20024D190 /* LaunchScreen.storyboard */,
 				4A7E2C0F1E73A6F20024D190 /* Info.plist */,
 			);
+			name = Norlands;
 			path = Norlens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4A7E2BFD1E73A6F10024D190 /* Norlens */ = {
+		4A7E2BFD1E73A6F10024D190 /* Norlands */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A7E2C121E73A6F20024D190 /* Build configuration list for PBXNativeTarget "Norlens" */;
+			buildConfigurationList = 4A7E2C121E73A6F20024D190 /* Build configuration list for PBXNativeTarget "Norlands" */;
 			buildPhases = (
 				4A7E2BFA1E73A6F10024D190 /* Sources */,
 				4A7E2BFB1E73A6F10024D190 /* Frameworks */,
@@ -82,9 +95,9 @@
 			);
 			dependencies = (
 			);
-			name = Norlens;
+			name = Norlands;
 			productName = Norlens;
-			productReference = 4A7E2BFE1E73A6F20024D190 /* Norlens.app */;
+			productReference = 4A7E2BFE1E73A6F20024D190 /* Norlands.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4A7E2BF91E73A6F10024D190 /* Build configuration list for PBXProject "Norlens" */;
+			buildConfigurationList = 4A7E2BF91E73A6F10024D190 /* Build configuration list for PBXProject "Norlands" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -117,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4A7E2BFD1E73A6F10024D190 /* Norlens */,
+				4A7E2BFD1E73A6F10024D190 /* Norlands */,
 			);
 		};
 /* End PBXProject section */
@@ -140,9 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A7E2C061E73A6F20024D190 /* SecondViewController.swift in Sources */,
+				4A7E2C061E73A6F20024D190 /* LocationDetailViewController.swift in Sources */,
 				4A7E2C021E73A6F20024D190 /* AppDelegate.swift in Sources */,
-				4A7E2C041E73A6F20024D190 /* FirstViewController.swift in Sources */,
+				4A7E2C1A1E7851910024D190 /* LocationTableViewController.swift in Sources */,
+				4A7E2C161E784C460024D190 /* Location.swift in Sources */,
+				4A7E2C041E73A6F20024D190 /* HomeViewController.swift in Sources */,
+				4A7E2C181E784D090024D190 /* Manager.swift in Sources */,
+				4A7E2C1C1E7851E80024D190 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +307,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4A7E2BF91E73A6F10024D190 /* Build configuration list for PBXProject "Norlens" */ = {
+		4A7E2BF91E73A6F10024D190 /* Build configuration list for PBXProject "Norlands" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A7E2C101E73A6F20024D190 /* Debug */,
@@ -299,7 +316,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A7E2C121E73A6F20024D190 /* Build configuration list for PBXNativeTarget "Norlens" */ = {
+		4A7E2C121E73A6F20024D190 /* Build configuration list for PBXNativeTarget "Norlands" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A7E2C131E73A6F20024D190 /* Debug */,

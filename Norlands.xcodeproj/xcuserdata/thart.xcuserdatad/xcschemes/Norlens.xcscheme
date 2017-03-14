@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4A7E2BFD1E73A6F10024D190"
-               BuildableName = "Norlens.app"
-               BlueprintName = "Norlens"
-               ReferencedContainer = "container:Norlens.xcodeproj">
+               BuildableName = "Norlands.app"
+               BlueprintName = "Norlands"
+               ReferencedContainer = "container:Norlands.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4A7E2BFD1E73A6F10024D190"
-            BuildableName = "Norlens.app"
-            BlueprintName = "Norlens"
-            ReferencedContainer = "container:Norlens.xcodeproj">
+            BuildableName = "Norlands.app"
+            BlueprintName = "Norlands"
+            ReferencedContainer = "container:Norlands.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4A7E2BFD1E73A6F10024D190"
-            BuildableName = "Norlens.app"
-            BlueprintName = "Norlens"
-            ReferencedContainer = "container:Norlens.xcodeproj">
+            BuildableName = "Norlands.app"
+            BlueprintName = "Norlands"
+            ReferencedContainer = "container:Norlands.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4A7E2BFD1E73A6F10024D190"
-            BuildableName = "Norlens.app"
-            BlueprintName = "Norlens"
-            ReferencedContainer = "container:Norlens.xcodeproj">
+            BuildableName = "Norlands.app"
+            BlueprintName = "Norlands"
+            ReferencedContainer = "container:Norlands.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
