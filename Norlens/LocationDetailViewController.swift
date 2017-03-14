@@ -13,10 +13,11 @@ class LocationDetailController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
     
-    var location = Location()
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var blurbTextView: UITextView!
     
-    //temp
-    var images = [UIImage(named: "pic1"), UIImage(named: "pic2")]
+    //MAKE SURE YOU set location before segueing to this view.
+    var location = Location()
     
     var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
     
@@ -26,6 +27,7 @@ class LocationDetailController: UIViewController {
         
         configurePageControl()
         
+        //Setup the scrollview with multiple images if they exist
         for i in 0..<location.images.count {
             frame.origin.x = self.scrollView.frame.size.width * CGFloat(i)
             frame.size = self.scrollView.frame.size
@@ -35,13 +37,15 @@ class LocationDetailController: UIViewController {
             sv.image = location.images[i]
             self.scrollView.addSubview(sv)
         }
+        self.scrollView.contentSize = CGSize(width: (self.scrollView.frame.size.width * CGFloat(location.images.count)), height: self.scrollView.frame.size.height)
         
-        self.scrollView.contentSize = CGSize(width: (self.scrollView.frame.size.width * CGFloat(images.count)), height: self.scrollView.frame.size.height)
+        self.titleLabel.text = location.title
+        self.blurbTextView.text = location.blurb
     }
     
     func configurePageControl() {
         // The total number of pages that are available is based on how many available colors we have.
-        self.pageControl.numberOfPages = images.count
+        self.pageControl.numberOfPages = location.images.count
         self.pageControl.currentPage = 0
         self.pageControl.tintColor = UIColor.red
         self.pageControl.pageIndicatorTintColor = UIColor.black

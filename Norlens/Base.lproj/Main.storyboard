@@ -103,6 +103,9 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Locations" id="qg5-iS-RQa"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="show" identifier="locationDetail" action="showDetailViewController:sender:" id="apg-g3-674"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTd-iY-ECe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -156,17 +159,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="i11-Z8-oul">
-                                <rect key="frame" x="156" y="315" width="62" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfE-Yl-aEL">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="275"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="275" id="zFi-OY-KGt"/>
                                 </constraints>
                             </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0C-dR-JX9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0C-dR-JX9">
                                 <rect key="frame" x="0.0" y="274" width="375" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="I4A-xC-ugI"/>
@@ -175,31 +174,39 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n5N-5R-vsa">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n5N-5R-vsa">
                                 <rect key="frame" x="0.0" y="361" width="375" height="257"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="GjM-Bb-Ybx">
+                                <rect key="frame" x="176" y="275" width="39" height="37"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="EfE-Yl-aEL" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="4HY-uO-Htt"/>
                             <constraint firstItem="n5N-5R-vsa" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="10" id="8Nq-PA-Iqq"/>
+                            <constraint firstItem="n5N-5R-vsa" firstAttribute="top" secondItem="B0C-dR-JX9" secondAttribute="bottom" constant="27" id="Czs-IP-a3u"/>
                             <constraint firstAttribute="trailing" secondItem="B0C-dR-JX9" secondAttribute="trailing" id="KAG-bf-YPz"/>
-                            <constraint firstItem="n5N-5R-vsa" firstAttribute="top" secondItem="B0C-dR-JX9" secondAttribute="bottom" constant="20" id="M5T-11-GwF"/>
+                            <constraint firstItem="GjM-Bb-Ybx" firstAttribute="top" secondItem="EfE-Yl-aEL" secondAttribute="bottom" id="Lf7-pn-Swc"/>
                             <constraint firstAttribute="trailing" secondItem="EfE-Yl-aEL" secondAttribute="trailing" id="T6B-xy-fXS"/>
+                            <constraint firstItem="GjM-Bb-Ybx" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" constant="8" id="h37-rE-2Pc"/>
                             <constraint firstAttribute="trailing" secondItem="n5N-5R-vsa" secondAttribute="trailing" constant="10" id="o2x-zh-SZF"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="n5N-5R-vsa" secondAttribute="bottom" id="v0c-Fc-i4E"/>
                             <constraint firstItem="B0C-dR-JX9" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="vl4-C4-TaO"/>
+                            <constraint firstItem="B0C-dR-JX9" firstAttribute="top" secondItem="EfE-Yl-aEL" secondAttribute="bottom" constant="-1" id="wOb-Jt-Nkp"/>
                             <constraint firstItem="EfE-Yl-aEL" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="xO9-Af-zGm"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="pageControl" destination="i11-Z8-oul" id="vOM-w0-hk2"/>
+                        <outlet property="blurbTextView" destination="n5N-5R-vsa" id="mLu-u2-BGw"/>
+                        <outlet property="pageControl" destination="GjM-Bb-Ybx" id="clR-qD-7HB"/>
                         <outlet property="scrollView" destination="EfE-Yl-aEL" id="9sS-bd-TEf"/>
+                        <outlet property="titleLabel" destination="B0C-dR-JX9" id="VDk-fA-kkh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
