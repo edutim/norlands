@@ -9,6 +9,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     var mapAnnotations: [MKAnnotation]?
     
+    var selectedLocation: Location?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,50 +41,46 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
-    /*
-    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if (annotation is MKUserLocation) {
             return nil
         }
         
-        let reuseId = "rid"
+        let reuseID = "rID"
         
-        var aView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId)
+        var aView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseID)
+        
         if aView == nil {
-            
-            print("h")
-            
-            //let school = schools.filter({(school: School) in school.title! == annotation.title!})
-            
-            
-            
-            //aView?.image = NSImage(named: "iconRed")
+            aView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseID)
             aView?.canShowCallout = true
-            var butt = UIButton()
-            //butt.title = "More Info"
-            //butt.target = self
-            //butt.action = #selector(self.callOutPressed)
-            //aView?.rightCalloutAccessoryView = butt
-        } else {
-            aView?.annotation = annotation
+            aView?.image = UIImage(named: "map-marker")
+            let button = UIButton(type: .detailDisclosure)
+            button.addTarget(self, action: #selector(self.callOutPressed), for: .touchDown)
+            aView?.rightCalloutAccessoryView = button
         }
-        
-        let a = aView as! MapAnnotation
-        
-        return a
-        
-    }
- */
- 
-    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
-        
+        return aView
     }
     
-    func mapView(mapView: MKMapView, didDeselectAnnotationView view: MKAnnotationView) {
-        
+    func callOutPressed() {
+        performSegue(withIdentifier: "locationDetailFromMaps", sender: self)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dest = segue.destination as! LocationDetailController
+        dest.location = selectedLocation!
+    }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        var view = Manager.shared.locations.filter() { $0.title == (view.annotation?.title)! }
+        if view.count > 0 {
+            selectedLocation = view[0]
+        }
+    }
+    
+    func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
+        selectedLocation = nil
+    }
+    
     
     /*
     func callOutPressed() {
