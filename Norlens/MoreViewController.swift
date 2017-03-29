@@ -1,10 +1,4 @@
-//
-//  MoreViewController.swift
-//  Norlands
-//
-//  Created by Timothy Hart on 3/14/17.
-//  Copyright © 2017 Apple. All rights reserved.
-//
+
 
 import UIKit
 
@@ -58,10 +52,27 @@ class MoreViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
         cell.backgroundColor = UIColor.blue
         // Configure the cell
+        
+        //NEED TO CHANGE THESE
+        if let label = cell.contentView.viewWithTag(1) as? UILabel {
+            let location = Manager.shared.locations[indexPath.row] as Location
+            label.text = location.title
+        }
+        
+        //check for the view tag 2, which in the image in the custom tableviewcell
+        if let imageView = cell.contentView.viewWithTag(2) as? UIImageView {
+            let location = Manager.shared.locations[indexPath.row] as Location
+            imageView.image = location.mainImage
+        }
+        
     
         return cell
     }
 
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
+    
     // MARK: UICollectionViewDelegate
 
     /*
