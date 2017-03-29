@@ -15,12 +15,12 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         // Do any additional setup after loading the view.
         
         //Set the initial location of the mapview
-        let initialLocation = CLLocation(latitude: 44.4042, longitude: -70.2096)
-        let regionRadius: CLLocationDistance = 25000
+        let initialLocation = CLLocation(latitude: 44.406842, longitude: -70.209998)
+        let regionRadius: CLLocationDistance = 150
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(initialLocation.coordinate,
                                                                   regionRadius * 2.0, regionRadius * 2.0)
         self.mapView.setRegion(coordinateRegion, animated: true)
-        
+        self.mapView.mapType = .hybrid
         mapAnnotations = createAnnotations()
         mapView!.addAnnotations(mapAnnotations!)
     }
