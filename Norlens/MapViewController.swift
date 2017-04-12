@@ -30,7 +30,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     func createAnnotations() -> [MKAnnotation] {
         var tempLocs = [MKAnnotation]()
         for l in Manager.shared.locations {
-            var a = MapAnnotation(title: l.title, locationName: l.title, coordinate: l.coordinate)
+            var a = MapAnnotation(title: l.title, locationName: "", coordinate: l.coordinate)
             tempLocs.append(a)
         }
         return tempLocs

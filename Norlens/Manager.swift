@@ -32,6 +32,16 @@ class Manager {
         //Add the first test location
         locations.append(loc)
         
+        //Create aother test location
+        loc = Location()
+        loc.title = "Location 3"
+        loc.mainImage = UIImage(named: "pic2")!
+        loc.images = [UIImage(named: "pic1")!, UIImage(named: "pic2")!]
+        loc.blurb = "Test blurb2"
+        loc.coordinate = CLLocationCoordinate2D(latitude: 44.406434, longitude: -70.20941)
+        //Add the first test location
+        locations.append(loc)
+        
         
     }
     
