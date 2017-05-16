@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,26 +23,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Norlands" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="24" y="472" width="59" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Washburn_Norlands" translatesAutoresizingMaskIntoConstraints="NO" id="NVE-Pr-Kwi">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="404"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="vdc-RD-dKc"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="NVE-Pr-Kwi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="344"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome info here. Image and little text." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl6-9a-NfR">
-                                <rect key="frame" x="24" y="514" width="410" height="66"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Welcome to the Norlens" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="0.0" y="412" width="375" height="42"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyO-fp-WrU">
+                                <rect key="frame" x="16" y="391" width="343" height="227"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">Welcome to the Washburn-Norlands Living History Center, Maine’s oldest living history farm and museum. This property was owned by the Washburn family from 1809 until 1973. Israel Washburn Sr. and his wife Martha “Patty” Benjamin raised ten children on this site in Livermore. These children went on to become important figures in politics and business throughout the state and country. 
+This interactive walking tour of the Norlands is designed for visitors when the museum is not open for tours. Information is available for each of the major buildings.  You may visit them in order by viewing the map, or view each separately using the list. More information on the Washburn family and the museum is available by going to the “more” tab.
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Avenir-Book"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Please enjoy your time at Norlands. We hope you’ll return soon and experience all that Norlands has to offer about what life was like in 19th-century, rural Maine.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Welcome to the Norlands" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <rect key="frame" x="7.5" y="341.5" width="360" height="41"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -50,19 +58,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="NVE-Pr-Kwi" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="5Z1-sw-BHw"/>
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="NVE-Pr-Kwi" secondAttribute="bottom" constant="8" id="AJf-K5-qLb"/>
-                            <constraint firstItem="NVE-Pr-Kwi" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="TwV-hZ-owI"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="18" id="XEE-bV-gmg"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
-                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="8" id="exx-4f-bx3"/>
-                            <constraint firstItem="NVE-Pr-Kwi" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="pfP-dB-xRP"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="8" id="vXh-5D-Crj"/>
-                            <constraint firstItem="Nl6-9a-NfR" firstAttribute="top" secondItem="A5M-7J-77L" secondAttribute="bottom" constant="25" id="wTM-7P-Guy"/>
-                            <constraint firstItem="Nl6-9a-NfR" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="8" id="yE8-jX-JNR"/>
-                            <constraint firstAttribute="trailing" secondItem="NVE-Pr-Kwi" secondAttribute="trailing" id="zXb-pk-zVW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oyO-fp-WrU" secondAttribute="trailing" id="AhT-hE-pUo"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="NVE-Pr-Kwi" secondAttribute="bottom" constant="8" id="S1l-iz-TLw"/>
+                            <constraint firstItem="oyO-fp-WrU" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8.5" id="ScT-NN-F80"/>
+                            <constraint firstAttribute="trailing" secondItem="NVE-Pr-Kwi" secondAttribute="trailing" id="UCu-WC-kLK"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="oyO-fp-WrU" secondAttribute="leading" id="i0a-Vs-552"/>
+                            <constraint firstItem="NVE-Pr-Kwi" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="jGY-D7-Bb3"/>
+                            <constraint firstItem="NVE-Pr-Kwi" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" multiplier="0.5" id="ogO-zj-diN"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="oyO-fp-WrU" secondAttribute="bottom" id="tcf-dt-NyB"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
@@ -275,6 +280,41 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fru-GX-eKW" customClass="KDCircularProgress" customModule="Norlands" customModuleProvider="target">
+                                <rect key="frame" x="269" y="283" width="77" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkA-4V-ZGY">
+                                        <rect key="frame" x="8" y="0.0" width="82" height="64"/>
+                                        <state key="normal" title="debug" image="Play_000000_100"/>
+                                        <connections>
+                                            <action selector="debugWithSender:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="5cy-Gw-UiC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="CkA-4V-ZGY" firstAttribute="centerX" secondItem="fru-GX-eKW" secondAttribute="centerX" id="9vq-Mp-9IO"/>
+                                    <constraint firstItem="CkA-4V-ZGY" firstAttribute="leading" secondItem="fru-GX-eKW" secondAttribute="leading" constant="8" id="C4T-g8-EUK"/>
+                                    <constraint firstItem="CkA-4V-ZGY" firstAttribute="centerY" secondItem="fru-GX-eKW" secondAttribute="centerY" id="Wsf-mO-ElG"/>
+                                    <constraint firstItem="CkA-4V-ZGY" firstAttribute="centerY" secondItem="fru-GX-eKW" secondAttribute="centerY" id="vcb-6u-K4C"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                                        <real key="value" value="43"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                        <real key="value" value="-90"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clockwise" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="glowAmount">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -295,6 +335,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="audioProgressIndicator" destination="fru-GX-eKW" id="R5w-8R-6U8"/>
                         <outlet property="blurbTextView" destination="n5N-5R-vsa" id="mLu-u2-BGw"/>
                         <outlet property="scrollView" destination="EfE-Yl-aEL" id="9sS-bd-TEf"/>
                         <outlet property="titleLabel" destination="B0C-dR-JX9" id="VDk-fA-kkh"/>
@@ -302,7 +343,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1790" y="934"/>
+            <point key="canvasLocation" x="1789.5999999999999" y="933.28335832083962"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -327,9 +368,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Washburn_Norlands" width="720" height="540"/>
+        <image name="Play_000000_100" width="50" height="50"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
+        <image name="welcome" width="1632" height="1224"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="apg-g3-674"/>

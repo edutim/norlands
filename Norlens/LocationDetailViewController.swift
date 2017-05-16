@@ -10,6 +10,8 @@ class LocationDetailController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var blurbTextView: UITextView!
     
+    @IBOutlet weak var audioProgressIndicator: KDCircularProgress!
+    
     //MAKE SURE YOU set location before segueing to this view.
     var location = Location()
     
@@ -33,6 +35,8 @@ class LocationDetailController: UIViewController {
         
         self.titleLabel.text = location.title
         self.blurbTextView.text = location.blurb
+        
+        audioProgressIndicator.set(colors: UIColor.white)
     }
     
     /*
@@ -49,6 +53,10 @@ class LocationDetailController: UIViewController {
         
     }
     */
+    
+    @IBAction func debug(sender: AnyObject) {
+        audioProgressIndicator.animate(toAngle: 360.0, duration: 5.0, completion: {completed in self.audioProgressIndicator.angle = 0.0})
+    }
  
     @IBAction func back(sender: AnyObject) {
         self.dismiss(animated: true, completion: {})

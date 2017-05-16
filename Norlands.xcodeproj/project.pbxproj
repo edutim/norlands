@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A3BDB3F1E9D358B00BB8D4C /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3BDB3E1E9D358B00BB8D4C /* Sound.swift */; };
 		4A3BDB411E9D379F00BB8D4C /* emptySound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A3BDB401E9D379F00BB8D4C /* emptySound.mp3 */; };
+		4A72FB921EA0330200CB5537 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A72FB911EA0330200CB5537 /* KDCircularProgress.swift */; };
 		4A7E2C021E73A6F20024D190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C011E73A6F20024D190 /* AppDelegate.swift */; };
 		4A7E2C041E73A6F20024D190 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C031E73A6F20024D190 /* HomeViewController.swift */; };
 		4A7E2C061E73A6F20024D190 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C051E73A6F20024D190 /* LocationDetailViewController.swift */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		4A3BDB3E1E9D358B00BB8D4C /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		4A3BDB401E9D379F00BB8D4C /* emptySound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = emptySound.mp3; sourceTree = "<group>"; };
+		4A72FB911EA0330200CB5537 /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
 		4A7E2BFE1E73A6F20024D190 /* Norlands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Norlands.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7E2C011E73A6F20024D190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A7E2C031E73A6F20024D190 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				4A8E734E1E8BD23000FC4157 /* MapAnnotation.swift */,
 				4A7E2C211E7883430024D190 /* MoreViewController.swift */,
 				4A3BDB3E1E9D358B00BB8D4C /* Sound.swift */,
+				4A72FB911EA0330200CB5537 /* KDCircularProgress.swift */,
 				4A7E2C071E73A6F20024D190 /* Main.storyboard */,
 				4A3BDB401E9D379F00BB8D4C /* emptySound.mp3 */,
 				4A7E2C0A1E73A6F20024D190 /* Assets.xcassets */,
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A72FB921EA0330200CB5537 /* KDCircularProgress.swift in Sources */,
 				4A7E2C221E7883430024D190 /* MoreViewController.swift in Sources */,
 				4A3BDB3F1E9D358B00BB8D4C /* Sound.swift in Sources */,
 				4A8E734F1E8BD23000FC4157 /* MapAnnotation.swift in Sources */,
