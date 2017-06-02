@@ -31,9 +31,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <mutableString key="content">Welcome to the Washburn-Norlands Living History Center, Maine’s oldest living history farm and museum. This property was owned by the Washburn family from 1809 until 1973. Israel Washburn Sr. and his wife Martha “Patty” Benjamin raised ten children on this site in Livermore. These children went on to become important figures in politics and business throughout the state and country. 
+                                        <string key="content">Welcome to the Washburn-Norlands Living History Center, Maine’s oldest living history farm and museum. This property was owned by the Washburn family from 1809 until 1973. Israel Washburn Sr. and his wife Martha “Patty” Benjamin raised ten children on this site in Livermore. These children went on to become important figures in politics and business throughout the state and country. 
 This interactive walking tour of the Norlands is designed for visitors when the museum is not open for tours. Information is available for each of the major buildings.  You may visit them in order by viewing the map, or view each separately using the list. More information on the Washburn family and the museum is available by going to the “more” tab.
-</mutableString>
+</string>
                                         <attributes>
                                             <font key="NSFont" size="14" name="Avenir-Book"/>
                                         </attributes>
@@ -280,11 +280,15 @@ This interactive walking tour of the Norlands is designed for visitors when the 
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fru-GX-eKW" customClass="KDCircularProgress" customModule="Norlands" customModuleProvider="target">
-                                <rect key="frame" x="269" y="283" width="77" height="64"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fru-GX-eKW" customClass="KDCircularProgress" customModule="Norlands" customModuleProvider="target">
+                                <rect key="frame" x="282" y="283" width="77" height="64"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkA-4V-ZGY">
-                                        <rect key="frame" x="8" y="0.0" width="82" height="64"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkA-4V-ZGY">
+                                        <rect key="frame" x="13.5" y="0.0" width="82" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="8pg-an-kxF"/>
+                                            <constraint firstAttribute="width" constant="82" id="TlZ-ae-Dyv"/>
+                                        </constraints>
                                         <state key="normal" title="debug" image="Play_000000_100"/>
                                         <connections>
                                             <action selector="debugWithSender:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="5cy-Gw-UiC"/>
@@ -293,10 +297,8 @@ This interactive walking tour of the Norlands is designed for visitors when the 
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="CkA-4V-ZGY" firstAttribute="centerX" secondItem="fru-GX-eKW" secondAttribute="centerX" id="9vq-Mp-9IO"/>
-                                    <constraint firstItem="CkA-4V-ZGY" firstAttribute="leading" secondItem="fru-GX-eKW" secondAttribute="leading" constant="8" id="C4T-g8-EUK"/>
-                                    <constraint firstItem="CkA-4V-ZGY" firstAttribute="centerY" secondItem="fru-GX-eKW" secondAttribute="centerY" id="Wsf-mO-ElG"/>
-                                    <constraint firstItem="CkA-4V-ZGY" firstAttribute="centerY" secondItem="fru-GX-eKW" secondAttribute="centerY" id="vcb-6u-K4C"/>
+                                    <constraint firstItem="CkA-4V-ZGY" firstAttribute="centerY" secondItem="fru-GX-eKW" secondAttribute="centerY" id="Lpe-Qm-v4F"/>
+                                    <constraint firstItem="CkA-4V-ZGY" firstAttribute="centerX" secondItem="fru-GX-eKW" secondAttribute="centerX" constant="16" id="Xe4-X0-8Ai"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="angle">
@@ -318,8 +320,11 @@ This interactive walking tour of the Norlands is designed for visitors when the 
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="fru-GX-eKW" firstAttribute="top" secondItem="EfE-Yl-aEL" secondAttribute="bottom" constant="8" id="283-lF-X16"/>
                             <constraint firstItem="EfE-Yl-aEL" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="4HY-uO-Htt"/>
+                            <constraint firstItem="fru-GX-eKW" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="5y3-28-aCZ"/>
                             <constraint firstItem="n5N-5R-vsa" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="10" id="8Nq-PA-Iqq"/>
+                            <constraint firstItem="n5N-5R-vsa" firstAttribute="top" secondItem="fru-GX-eKW" secondAttribute="bottom" constant="14" id="ByP-XF-ZYe"/>
                             <constraint firstItem="n5N-5R-vsa" firstAttribute="top" secondItem="B0C-dR-JX9" secondAttribute="bottom" constant="27" id="Czs-IP-a3u"/>
                             <constraint firstItem="seP-UU-LZC" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="DNk-fv-89r"/>
                             <constraint firstAttribute="trailing" secondItem="B0C-dR-JX9" secondAttribute="trailing" id="KAG-bf-YPz"/>
@@ -328,6 +333,7 @@ This interactive walking tour of the Norlands is designed for visitors when the 
                             <constraint firstItem="seP-UU-LZC" firstAttribute="top" secondItem="n5N-5R-vsa" secondAttribute="bottom" id="UFi-kf-Gbl"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="seP-UU-LZC" secondAttribute="bottom" id="j5r-j1-uCu"/>
                             <constraint firstAttribute="trailing" secondItem="n5N-5R-vsa" secondAttribute="trailing" constant="10" id="o2x-zh-SZF"/>
+                            <constraint firstItem="fru-GX-eKW" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="282" id="vWP-Ia-IMv"/>
                             <constraint firstItem="B0C-dR-JX9" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="vl4-C4-TaO"/>
                             <constraint firstItem="B0C-dR-JX9" firstAttribute="top" secondItem="EfE-Yl-aEL" secondAttribute="bottom" constant="-1" id="wOb-Jt-Nkp"/>
                             <constraint firstItem="EfE-Yl-aEL" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="xO9-Af-zGm"/>
