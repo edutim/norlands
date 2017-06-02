@@ -35,8 +35,13 @@ class LocationDetailController: UIViewController {
         
         self.titleLabel.text = location.title
         self.blurbTextView.text = location.blurb
+        //
         
         audioProgressIndicator.set(colors: UIColor.white)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        self.blurbTextView.setContentOffset(CGPoint.zero, animated: false)
     }
     
     /*
