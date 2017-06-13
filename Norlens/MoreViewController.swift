@@ -45,24 +45,47 @@ class MoreViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 4
+        return 5
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-        cell.backgroundColor = UIColor.blue
+        cell.backgroundColor = UIColor.gray
         // Configure the cell
+        
+        
+        var image = UIImage()
+        var title = ""
+        
+        switch indexPath.row {
+            case 0:
+                title = "Washburn-Norlands Living History Center"
+                image = #imageLiteral(resourceName: "WashburnLetter")
+            case 1:
+                title = "Events"
+                image = #imageLiteral(resourceName: "EventsLetter")
+            case 2:
+                title = "Contact"
+                image = #imageLiteral(resourceName: "ContactLetter")
+            case 3:
+                title = "Maine Memory Network"
+                image = #imageLiteral(resourceName: "MaineMemNetLetter")
+            case 4:
+                title = "About This App"
+                image = #imageLiteral(resourceName: "AboutAppLetter")
+            
+        default:
+            print("Not a row I can see.")
+        }
         
         //NEED TO CHANGE THESE
         if let label = cell.contentView.viewWithTag(1) as? UILabel {
-            let location = Manager.shared.locations[indexPath.row] as Location
-            label.text = location.title
+            label.text = title
         }
         
         //check for the view tag 2, which in the image in the custom tableviewcell
         if let imageView = cell.contentView.viewWithTag(2) as? UIImageView {
-            let location = Manager.shared.locations[indexPath.row] as Location
-            imageView.image = location.mainImage
+            imageView.image = image
         }
         
     
@@ -70,7 +93,28 @@ class MoreViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row)
+        
+        
+        switch indexPath.row {
+        case 0:
+            //Washburn0Norlansa LHC
+            UIApplication.shared.openURL(URL(string: "https://norlands.org/index.html")!)
+        case 1:
+            //Events
+            UIApplication.shared.openURL(URL(string: "https://norlands.org/events.html")!)
+        case 2:
+            //Contact
+            UIApplication.shared.openURL(URL(string: "https://norlands.org/contact.html")!)
+        case 3:
+            //Maine Memory Network
+            UIApplication.shared.openURL(URL(string: "https://www.mainememory.net/sitebuilder/site/2556/page/4110/display?use_mmn=1")!)
+        case 4:
+            //About
+            print("hey, fix me")
+        default:
+            print("Not a row I can see.")
+        }
+
     }
     
     // MARK: UICollectionViewDelegate

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F43c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G12b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,12 +27,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="344"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyO-fp-WrU">
-                                <rect key="frame" x="16" y="391" width="343" height="227"/>
+                                <rect key="frame" x="16" y="450" width="343" height="168"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Welcome to the Washburn-Norlands Living History Center, Maine’s oldest living history farm and museum. This property was owned by the Washburn family from 1809 until 1973. Israel Washburn Sr. and his wife Martha “Patty” Benjamin raised ten children on this site in Livermore. These children went on to become important figures in politics and business throughout the state and country. 
-This interactive walking tour of the Norlands is designed for visitors when the museum is not open for tours. Information is available for each of the major buildings.  You may visit them in order by viewing the map, or view each separately using the list. More information on the Washburn family and the museum is available by going to the “more” tab.
+                                        <string key="content">      Welcome to the Washburn-Norlands Living History Center, Maine’s oldest living history farm and museum. This property was owned by the Washburn family from 1809 until 1973. Israel Washburn Sr. and his wife Martha “Patty” Benjamin raised ten children on this site in Livermore. These children went on to become important figures in politics and business throughout the state and country. 
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">This interactive walking tour of the Norlands is designed for visitors when the museum is not open for tours. Information is available for each of the major buildings.  You may visit them in order by viewing the map, or view each separately using the list. More information on the Washburn family and the museum is available by going to the “more” tab.
 </string>
                                         <attributes>
                                             <font key="NSFont" size="14" name="Avenir-Book"/>
@@ -55,6 +62,13 @@ This interactive walking tour of the Norlands is designed for visitors when the 
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click the play button to listen to the text narrated by former Governor and Maine Senator, Angus King." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFL-1w-9By">
+                                <rect key="frame" x="166" y="390" width="193" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -62,7 +76,7 @@ This interactive walking tour of the Norlands is designed for visitors when the 
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oyO-fp-WrU" secondAttribute="trailing" id="AhT-hE-pUo"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="NVE-Pr-Kwi" secondAttribute="bottom" constant="8" id="S1l-iz-TLw"/>
-                            <constraint firstItem="oyO-fp-WrU" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8.5" id="ScT-NN-F80"/>
+                            <constraint firstItem="oyO-fp-WrU" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="67.5" id="ScT-NN-F80"/>
                             <constraint firstAttribute="trailing" secondItem="NVE-Pr-Kwi" secondAttribute="trailing" id="UCu-WC-kLK"/>
                             <constraint firstAttribute="leadingMargin" secondItem="oyO-fp-WrU" secondAttribute="leading" id="i0a-Vs-552"/>
                             <constraint firstItem="NVE-Pr-Kwi" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="jGY-D7-Bb3"/>
@@ -71,6 +85,9 @@ This interactive walking tour of the Norlands is designed for visitors when the 
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="blurbTV" destination="oyO-fp-WrU" id="Dxz-81-3cG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,9 +122,9 @@ This interactive walking tour of the Norlands is designed for visitors when the 
                                             <blurEffect style="light"/>
                                         </visualEffectView>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ihr-as-JCb">
-                                            <rect key="frame" x="8" y="37.5" width="359" height="25"/>
-                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
-                                            <nil key="textColor"/>
+                                            <rect key="frame" x="8" y="21.5" width="359" height="57.5"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="42"/>
+                                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -152,7 +169,7 @@ This interactive walking tour of the Norlands is designed for visitors when the 
                             <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="Cell" id="YAc-cA-s7r">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="Cell" reuseIdentifier="Cell" id="YAc-cA-s7r">
                                 <rect key="frame" x="10" y="10" width="160" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -165,10 +182,6 @@ This interactive walking tour of the Norlands is designed for visitors when the 
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="99C-kY-7ho">
-                                            <rect key="frame" x="69" y="141" width="240" height="128"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
                                         <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kX0-Q9-SR3">
                                             <rect key="frame" x="30" y="30" width="100" height="100"/>
                                             <constraints>
@@ -253,7 +266,7 @@ This interactive walking tour of the Norlands is designed for visitors when the 
                                 </constraints>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0C-dR-JX9">
-                                <rect key="frame" x="0.0" y="274" width="375" height="60"/>
+                                <rect key="frame" x="10" y="274" width="365" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="I4A-xC-ugI"/>
                                 </constraints>
@@ -291,7 +304,7 @@ This interactive walking tour of the Norlands is designed for visitors when the 
                                         </constraints>
                                         <state key="normal" title="debug" image="Play_000000_100"/>
                                         <connections>
-                                            <action selector="debugWithSender:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="5cy-Gw-UiC"/>
+                                            <action selector="audioPlayWithSender:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="bh6-dF-MHm"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -334,7 +347,7 @@ This interactive walking tour of the Norlands is designed for visitors when the 
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="seP-UU-LZC" secondAttribute="bottom" id="j5r-j1-uCu"/>
                             <constraint firstAttribute="trailing" secondItem="n5N-5R-vsa" secondAttribute="trailing" constant="10" id="o2x-zh-SZF"/>
                             <constraint firstItem="fru-GX-eKW" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="282" id="vWP-Ia-IMv"/>
-                            <constraint firstItem="B0C-dR-JX9" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="vl4-C4-TaO"/>
+                            <constraint firstItem="B0C-dR-JX9" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="10" id="vl4-C4-TaO"/>
                             <constraint firstItem="B0C-dR-JX9" firstAttribute="top" secondItem="EfE-Yl-aEL" secondAttribute="bottom" constant="-1" id="wOb-Jt-Nkp"/>
                             <constraint firstItem="EfE-Yl-aEL" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="xO9-Af-zGm"/>
                         </constraints>
@@ -343,6 +356,7 @@ This interactive walking tour of the Norlands is designed for visitors when the 
                     <connections>
                         <outlet property="audioProgressIndicator" destination="fru-GX-eKW" id="R5w-8R-6U8"/>
                         <outlet property="blurbTextView" destination="n5N-5R-vsa" id="mLu-u2-BGw"/>
+                        <outlet property="playButton" destination="CkA-4V-ZGY" id="phL-zP-E1S"/>
                         <outlet property="scrollView" destination="EfE-Yl-aEL" id="9sS-bd-TEf"/>
                         <outlet property="titleLabel" destination="B0C-dR-JX9" id="VDk-fA-kkh"/>
                     </connections>
@@ -380,6 +394,6 @@ This interactive walking tour of the Norlands is designed for visitors when the 
         <image name="welcome" width="1632" height="1224"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="apg-g3-674"/>
+        <segue reference="qxO-b9-ERy"/>
     </inferredMetricsTieBreakers>
 </document>

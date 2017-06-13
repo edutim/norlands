@@ -1,6 +1,7 @@
 
 
 import UIKit
+import AVFoundation
 
 class LocationDetailController: UIViewController {
 
@@ -10,7 +11,9 @@ class LocationDetailController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var blurbTextView: UITextView!
     
+    @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var audioProgressIndicator: KDCircularProgress!
+    var blurbPlayer: AVAudioPlayer!
     
     //MAKE SURE YOU set location before segueing to this view.
     var location = Location()
@@ -35,13 +38,36 @@ class LocationDetailController: UIViewController {
         
         self.titleLabel.text = location.title
         self.blurbTextView.text = location.blurb
+        
+        //Create an audioplayer for the blurb to be spoken aloud
+        do {
+            blurbPlayer = try AVAudioPlayer(contentsOf: location.audioBlurbURL!)
+        } catch {
+            print("can't load the blurb audio")
+        }
         //
         
         audioProgressIndicator.set(colors: UIColor.white)
+        audioProgressIndicator.angle = 0
+        
+        
     }
     
     override func viewDidLayoutSubviews() {
         self.blurbTextView.setContentOffset(CGPoint.zero, animated: false)
+    }
+    
+    @IBAction func audioPlay(sender: UIButton) {
+        if !blurbPlayer.isPlaying {
+            blurbPlayer.play()
+            playButton.setImage(#imageLiteral(resourceName: "Pause_000000_100"), for: UIControlState.normal)
+            audioProgressIndicator.animate(fromAngle: audioProgressIndicator.angle, toAngle: 360, duration: (blurbPlayer.duration - blurbPlayer.currentTime), completion: { done in self.audioProgressIndicator.stopAnimation()})
+        } else {
+            blurbPlayer.stop()
+            playButton.setImage(#imageLiteral(resourceName: "Play_000000_100"), for: UIControlState.normal)
+            audioProgressIndicator.pauseAnimation()
+        }
+        //blurbPlayer.play()
     }
     
     /*

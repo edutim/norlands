@@ -24,6 +24,12 @@
 		4A7E2C201E786D900024D190 /* LocationCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C1F1E786D900024D190 /* LocationCustomCell.swift */; };
 		4A7E2C221E7883430024D190 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E2C211E7883430024D190 /* MoreViewController.swift */; };
 		4A8E734F1E8BD23000FC4157 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E734E1E8BD23000FC4157 /* MapAnnotation.swift */; };
+		4AB13EB21EEF2FF200628230 /* Barn.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4AB13EB11EEF2FF200628230 /* Barn.m4a */; };
+		4AB13EB71EF014E800628230 /* Library.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4AB13EB61EF014E800628230 /* Library.m4a */; };
+		4AB13EB91EF014F100628230 /* Mansion.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4AB13EB81EF014F100628230 /* Mansion.m4a */; };
+		4AB13EBB1EF0150000628230 /* Pondside.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4AB13EBA1EF0150000628230 /* Pondside.m4a */; };
+		4AB13EBD1EF0151400628230 /* School_House.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4AB13EBC1EF0151400628230 /* School_House.m4a */; };
+		4AB13EBF1EF0155C00628230 /* Church.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4AB13EBE1EF0155C00628230 /* Church.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +52,12 @@
 		4A7E2C1F1E786D900024D190 /* LocationCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCustomCell.swift; sourceTree = "<group>"; };
 		4A7E2C211E7883430024D190 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		4A8E734E1E8BD23000FC4157 /* MapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
+		4AB13EB11EEF2FF200628230 /* Barn.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Barn.m4a; sourceTree = "<group>"; };
+		4AB13EB61EF014E800628230 /* Library.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Library.m4a; sourceTree = "<group>"; };
+		4AB13EB81EF014F100628230 /* Mansion.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mansion.m4a; sourceTree = "<group>"; };
+		4AB13EBA1EF0150000628230 /* Pondside.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pondside.m4a; sourceTree = "<group>"; };
+		4AB13EBC1EF0151400628230 /* School_House.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = School_House.m4a; sourceTree = "<group>"; };
+		4AB13EBE1EF0155C00628230 /* Church.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Church.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,7 @@
 		4A7E2C001E73A6F20024D190 /* Norlands */ = {
 			isa = PBXGroup;
 			children = (
+				4AB13EB51EF014CD00628230 /* Audio */,
 				4A7E2C171E784D090024D190 /* Manager.swift */,
 				4A7E2C011E73A6F20024D190 /* AppDelegate.swift */,
 				4A7E2C031E73A6F20024D190 /* HomeViewController.swift */,
@@ -99,6 +112,19 @@
 			);
 			name = Norlands;
 			path = Norlens;
+			sourceTree = "<group>";
+		};
+		4AB13EB51EF014CD00628230 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				4AB13EB11EEF2FF200628230 /* Barn.m4a */,
+				4AB13EB61EF014E800628230 /* Library.m4a */,
+				4AB13EBE1EF0155C00628230 /* Church.m4a */,
+				4AB13EB81EF014F100628230 /* Mansion.m4a */,
+				4AB13EBA1EF0150000628230 /* Pondside.m4a */,
+				4AB13EBC1EF0151400628230 /* School_House.m4a */,
+			);
+			name = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,11 +187,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AB13EB71EF014E800628230 /* Library.m4a in Resources */,
 				4A7E2C0E1E73A6F20024D190 /* LaunchScreen.storyboard in Resources */,
+				4AB13EBF1EF0155C00628230 /* Church.m4a in Resources */,
 				4A3BDB411E9D379F00BB8D4C /* emptySound.mp3 in Resources */,
 				4A7E2C0B1E73A6F20024D190 /* Assets.xcassets in Resources */,
+				4AB13EBD1EF0151400628230 /* School_House.m4a in Resources */,
+				4AB13EBB1EF0150000628230 /* Pondside.m4a in Resources */,
 				4A7E2C1E1E78650C0024D190 /* Notes in Resources */,
 				4A7E2C091E73A6F20024D190 /* Main.storyboard in Resources */,
+				4AB13EB21EEF2FF200628230 /* Barn.m4a in Resources */,
+				4AB13EB91EF014F100628230 /* Mansion.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
