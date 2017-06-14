@@ -13,7 +13,7 @@ class MoreViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
         
@@ -49,17 +49,16 @@ class MoreViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-        cell.backgroundColor = UIColor.gray
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MoreCollectionViewCell
+        //cell.backgroundColor = UIColor.gray
         // Configure the cell
-        
         
         var image = UIImage()
         var title = ""
         
         switch indexPath.row {
             case 0:
-                title = "Washburn-Norlands Living History Center"
+                title = "Living History Center"
                 image = #imageLiteral(resourceName: "WashburnLetter")
             case 1:
                 title = "Events"
@@ -111,6 +110,7 @@ class MoreViewController: UICollectionViewController {
         case 4:
             //About
             print("hey, fix me")
+            performSegue(withIdentifier: "AboutApp", sender: self)
         default:
             print("Not a row I can see.")
         }
