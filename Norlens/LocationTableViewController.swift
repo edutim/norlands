@@ -63,8 +63,8 @@ class LocationTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        var dest = segue.destination as! LocationDetailController
-        var location = sender as! Location
+        let dest = segue.destination as! LocationDetailController
+        let location = sender as! Location
         dest.location = location
     }
 

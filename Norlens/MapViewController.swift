@@ -17,8 +17,9 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         // Do any additional setup after loading the view.
         
         //Set the initial location of the mapview
-        let initialLocation = CLLocation(latitude: 44.406842, longitude: -70.209998)
-        let regionRadius: CLLocationDistance = 150
+        //let initialLocation = CLLocation(latitude: 44.406842, longitude: -70.209998)
+        let initialLocation = CLLocation(latitude: 44.405000, longitude: -70.209998)
+        let regionRadius: CLLocationDistance = 300
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(initialLocation.coordinate,
                                                                   regionRadius * 2.0, regionRadius * 2.0)
         self.mapView.setRegion(coordinateRegion, animated: true)
@@ -30,7 +31,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     func createAnnotations() -> [MKAnnotation] {
         var tempLocs = [MKAnnotation]()
         for l in Manager.shared.locations {
-            var a = MapAnnotation(title: l.title, locationName: "", coordinate: l.coordinate)
+            let a = MapAnnotation(title: l.title, locationName: "", coordinate: l.coordinate)
             tempLocs.append(a)
         }
         return tempLocs
