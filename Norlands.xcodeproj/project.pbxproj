@@ -357,7 +357,7 @@
 				DEVELOPMENT_TEAM = 8HDYZY8AP6;
 				INFOPLIST_FILE = Norlens/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.Norlens;
+				PRODUCT_BUNDLE_IDENTIFIER = org.rsu73.norlands;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -370,7 +370,7 @@
 				DEVELOPMENT_TEAM = 8HDYZY8AP6;
 				INFOPLIST_FILE = Norlens/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.Norlens;
+				PRODUCT_BUNDLE_IDENTIFIER = org.rsu73.norlands;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
