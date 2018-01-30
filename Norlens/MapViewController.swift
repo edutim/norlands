@@ -62,7 +62,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         return aView
     }
     
-    func callOutPressed() {
+    @objc func callOutPressed() {
         performSegue(withIdentifier: "locationDetailFromMaps", sender: self)
     }
     

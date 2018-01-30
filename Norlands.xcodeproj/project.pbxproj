@@ -169,6 +169,7 @@
 					4A7E2BFD1E73A6F10024D190 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 8HDYZY8AP6;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -361,7 +362,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.rsu73.norlands;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -376,7 +378,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.rsu73.norlands;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
